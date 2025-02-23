@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmes Preferidos</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "gpontes123") {
+                document.getElementById("content").style.display = "block";
+                document.getElementById("login").style.display = "none";
+            } else {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login">
+        <h2>Digite a senha para acessar:</h2>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Entrar</button>
+    </div>
+    
+    <div id="content" style="display: none;">
+        <h1>Bem-vindo a lista de filmes do guilherme!</h1>
+        <p>Apenas quem sabe a senha pode ver isso.</p>
+    </div>
+</body>
+</html>
